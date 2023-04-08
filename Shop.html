@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Styles.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Gloock&family=Labrada:wght@100&family=Lora&display=swap" rel="stylesheet">
+    <title>Products</title>
+
+     <!--FAVICON -->
+     <link rel="shortcut icon" href="assets/img/ic.png" type="image/x-icon">
+
+     <!-- REMIX ICONS -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+     <!--CSS -->
+     <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    button i{
+        color:rgba(252, 135, 0, 0.707);
+    }
+    button{
+        background-color:rgba(0, 0, 0, 0.69);
+        border: 1px solid rgba(0, 0, 0, 0.69);
+
+    }
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+h1 {
+    margin: 10px;
+    font-size: 30px;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  background-color: #F5EBE0;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f100;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #c1c0c0;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #e8a92cfb;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+  </style>
+</head>
+<header>
+    <h2>Antiques</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+           
+        </ul>
+        <form  class="formnav" method="get">
+            <input type="text" name="q" placeholder="Search..." >
+            <button type="submit" style="color: white;">Search</button>
+          </form>			  
+    </nav>
+</header>
+<main> 
+
+<body style="background-color: #f0f9ffc8;">
+    <h2 id="heading_shop">Buy Our Latest Products</h2>
+  
+    <div class="Common first">
+<div class="in-first first1">
+<img src="product11.jpg" alt="Plant">
+
+<!-- <p>Jar and cover mounted as a pot-pourri</p> -->
+<p class="price">Price: $50</p>
+<button class="button--flex product__button">
+    <i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+
+
+<div class="in-first first2">
+<img src="product13.jpg" alt="Plant">
+<!-- <p>Structure of Franz Xaver Bergmann</p> -->
+<p>Price: $139</p>
+<button class="button--flex product__button">
+    <i class="ri-shopping-bag-line"></i>
+</button> 
+</div>
+
+<div class="in-first first3">
+<img src="product13.jpg" alt="Plant">
+<!-- <p>Jar and cover mounted as a pot-pourri</p> -->
+<p>Price: $199</p>
+<button class="button--flex product__button">
+    <i class="ri-shopping-bag-line"></i>
+</button> 
+</div>
+
+    </div>
+    <div class="Common second"><div class="in-second second1">
+        <img src="product14.jpg" alt="Plant">
+        <!-- <p>Etui</p> -->
+        <p>Price: $109</p>
+        <button class="button--flex product__button">
+            <i class="ri-shopping-bag-line"></i>
+        </button>
+        </div>
+        
+        <div class="in-second second2">
+        <img src="product15.jpg" alt="Plant">
+            <!-- <p>cabriolets</p> -->
+            <p>Price: $149</p>
+            <button class="button--flex product__button">
+                <i class="ri-shopping-bag-line"></i>
+            </button>
+        </div>
+        
+        <div class="in-second second3">
+        <img src="product16.jpg" alt="Plant">
+            <!-- <p>Sèvres Palace Porcelain Urns</p> -->
+            <p>Price: $199</p>
+            <button class="button--flex product__button">
+                <i class="ri-shopping-bag-line"></i>
+            </button>
+        </div></div>
+
+
+
+        <button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+      
+</main>
+    <footer>
+        <div class="contact-info">
+          <p>Contact us</p>
+          <p>Phone number: +1475654778</p>
+          <p>Email Id: antiqueproducts.com</p>
+        </div>
+        <div class="logo">
+          <img src="logo1.jpg" alt="Your Company Name">
+        </div>
+        <p>&copy; 2023 Antiques. All rights reserved.</p>
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Antiques</title>
+	<!-- <link rel="stylesheet" href="form.css"> -->
+    <link rel="stylesheet" href="form.css">
+
+<link rel="stylesheet" href="contact.css">
+
+	<link rel="stylesheet" href="Styles.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Gloock&family=Labrada:wght@100&family=Lora&display=swap" rel="stylesheet">
+   <style>
+     .ContactText{
+        text-align: center;
+       
+        padding:4px;
+        letter-spacing: 1px;
+        word-spacing:1px;
+     }
+
+     .ContactText p a{
+     text-decoration: underline;
+     color:blue;
+     }
+    
+   </style>
+
+
+</head>
+<body>
+	<!-- adding navigation bar with search box -->
+	<header>
+		<h2>Antiques</h2>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Shop.html">Shop</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			<form  class="formnav" method="get">
+				<input type="text" name="q" placeholder="Search..." >
+				<button type="submit" style="color: rgb(29, 28, 28);">Search</button>
+			  </form>			  
+		</nav>
+	</header>
+    <div class="ContactText">
+    <h1 >Contact Us </h1>
+    <p>Subscribe to our Newsletter to know about what coming' up and what discount is going on our trending products. </p>
+    <p>Click here to subscribe -><a href="#">AntiqueNewsletter</a></p>
+    <p>To contact Us fill your information in the following form below:</p>
+   </div>
+    <div class="containform">
+        <form class="formcon" id="Form1">
+     <h3>Personal Info</h3>
+     <input type="text" name="First Name" placeholder="First_Name" required id="">
+     <input type="text" name="Last Name" placeholder="Last_Name" required id="">
+     
+
+     <div class="BOXbutton">
+        <button type="button"  id="next1" >Next</button>
+     </div>
+
+        </form>
+
+        <form class="formcon" id="Form2">
+            <h3>Contact Information</h3>
+            <input type="number" name="number" placeholder="Phone Number" required id="">
+            <input type="email" name="Email" placeholder="Email" required id="">
+         
+       
+            <div class="BOXbutton">
+               <button type="button" id="back1">Back</button>
+               <button type="button" id="next2">Next</button>
+
+            </div>
+       
+               </form>
+
+               <form class="formcon" action="/"  id="Form3">
+                <h3>Message</h3>
+                <textarea name="" id="" cols="29" rows="6.5"></textarea>
+           
+                <div class="BOXbutton">
+                   <button type="button" id="back2">Back</button>
+                   <button type="submit" >submit</button>
+    
+                </div>
+                
+              
+           
+                   </form>
+
+                   <div class="step-row">
+                    <div id="progress" ></div>
+                    <div class="step-col"><small>Step 1 </small></div>
+                    <div class="step-col"><small>Step 2</small></div>
+
+                    <div class="step-col"><small>Step 3</small></div>
+
+                   </div>
+
+    </div>
+    <footer>
+        <div class="contact-info">
+          <p>Contact us</p>
+          <p>Phone number: +1475654778</p>
+          <p>Email Id: BusinessforKamal.com</p>
+        </div>
+        <div class="logo">
+          <img src="logo1.jpg" alt="Your Company Name">
+        </div>
+        <p>&copy; 2023 Antiques. All rights reserved.</p>
+      </footer>
+    <script>
+
+var Form1 = document.getElementById("Form1");
+var Form2 = document.getElementById("Form2");
+var Form3 = document.getElementById("Form3");
+
+var next1 = document.getElementById("next1");
+var next2 = document.getElementById("next2");
+
+var back1 = document.getElementById("back1");
+var back2 = document.getElementById("back2");
+
+var progress = document.getElementById("progress")
+
+next1.onclick  =function() {
+    Form1.style.left="-450px";
+    Form2.style.left="40px";
+    progress.style.width="240px"
+}
+
+back1.onclick = function() {
+    Form1.style.left="40px";
+    Form2.style.left="450px";
+    progress.style.width="120px"
+
+}
+
+next2.onclick  =function() {
+    Form2.style.left="-450px";
+    Form3.style.left="40px";
+    progress.style.width="360px"
+
+}
+
+back2.onclick = function() {
+    Form2.style.left="40px";
+    Form3.style.left="450px";
+    progress.style.width="240px"
+
+}
+
+
+
+    </script>
+
+
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+/* 
+body{
+    background-position: center;
+    background-size: cover;
+          } */
+    
+    .containform{
+        background-color: rgba(105, 220, 220, 0.277);
+    width: 360px;
+    height: 400px;
+    margin: 3% auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    }
+    
+    h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #454141;
+    }
+    .containform form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+    }
+    
+    .formcon input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #171616;
+    outline: none;
+    background: transparent;
+    }
+    ::placeholder{
+    color: rgba(3, 3, 3, 0.2)
+    
+    }
+    
+    .BOXbutton{width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    
+    }
+
+    textarea{
+        border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+    }
+    
+    .formcon button{
+    width: 110px;
+    height:35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    }
+    
+    #Form2{
+    left: 450px;
+    }
+    #Form3{
+        left: 450px;
+    }
+    
+    .step-row{
+    width: 360px;
+    height:40px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+    
+    }
+     
+    
+    .step-col{
+        width:120px;
+        text-align: center;
+        color: #333;
+        position: relative;
+    }
+    
+    #progress{
+        position: absolute;
+        height: 100%;
+        width: 120px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    transition:1s;
+    
+    }
+    
+    #progress::after{
+        content: "";
+     width:0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    
+    right: -20px;
+    
+    top: 0;
+    
+    border-left: 20px solid #ffad06;
+    
+     
+    
+    }
+    .ContactText{
+        margin-top:25px;
+    }
+
+   
